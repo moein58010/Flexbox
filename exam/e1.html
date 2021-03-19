@@ -2,32 +2,16 @@
 <html>
 <head>
 	<title></title>
-	<style>
-		.flex-container {
-			display:flex;
-			flex-direction: row-reverse;
-			justify-content: space-between;
-			
-		}
-		
-		.flex-container > div {
-			background-color: #00ff33;
-			margin: 50px;
-			padding: 50px;
-			flex-grow:1;
-			
-		}
-		
-	</style>
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
 </head>
 <body>
-	<div class="flex-container">
-		<div class="item">1</div>
-		<div class="item">2</div>
-		<div class="item">3</div>
-		<div class="item">4</div>
-		<div class="item">5</div>
-		<div class="item">6</div>
+	<div class="flex flex-row-reverse justify-between">
+		<div class="bg-green-500 m-10 p-10 flex-grow text-white">1</div>
+		<div class="bg-green-500 m-10 p-10 flex-grow text-white">2</div>
+		<div class="bg-green-500 m-10 p-10 flex-grow text-white">3</div>
+		<div class="bg-green-500 m-10 p-10 flex-grow text-white">4</div>
+		<div class="bg-green-500 m-10 p-10 flex-grow text-white">5</div>
+		<div class="bg-green-500 m-10 p-10 flex-grow text-white">6</div>
 	</div>
 </body>
 </html>
