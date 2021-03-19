@@ -2,36 +2,14 @@
 <html lang="fa">
 <head>
 	<title>display: flex</title>
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
 	<meta charset="utf-8">
-	<style>
-		body {
-			direction: rtl;
-		}
-		
-		.flex-container {
-			width: 800px;
-			height: 500px;
-			display: flex;
-			background-color: #ffff00;
-			
-		}
-		
-		.flex-item {
-			width: 100px;
-			height: 100px;
-			margin: 10px;
-			background-color: #0000ff;
-			color: #ffffff;
-			text-align: center;
-		}
-		
-	</style>
 </head>
-<body direction="rtl">
-	<div class="flex-container">
-		<div class="flex-item">1</div>
-		<div class="flex-item">2</div>
-		<div class="flex-item">3</div>
+<body dir="rtl">
+	<div class="w-full h-64 flex bg-blue-400 ">
+		<div class="w-24 h-24 m-2 bg-red-400 text-gray-700 text-center">1</div>
+		<div class="w-24 h-24 m-2 bg-red-400 text-gray-700 text-center">2</div>
+		<div class="w-24 h-24 m-2 bg-red-400 text-gray-700 text-center">3</div>
 	</div>
 </body>
 </html>
