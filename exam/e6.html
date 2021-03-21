@@ -3,44 +3,21 @@
 <head>
 	<title>flex-wrap: now-wrap , wrap , wrap-reverse</title>
 	<meta charset="utf-8">
-	<style>
-		body {
-			direction: ltr;
-		}
-		
-		.flex-container {
-			width: 400px;
-			display: flex;
-			flex-wrap: wrap-reverse;
-			background-color: #ffff00;
-			color:#fff;
-			
-		}
-		
-		.flex-item {
-			width: 100px;
-			margin: 10px;
-			background-color: #0000ff;
-			padding: 10px;
-		}
-		
-		}
-		
-	</style>
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
 </head>
-<body direction="rtl">
-	<div class="flex-container">
-		<div class="flex-item">1</div>
-		<div class="flex-item">2</div>
-		<div class="flex-item">3</div>
-		<div class="flex-item">4</div>
-		<div class="flex-item">5</div>
-		<div class="flex-item">6</div>
-		<div class="flex-item">7</div>
-		<div class="flex-item">8</div>
-		<div class="flex-item">9</div>
-		<div class="flex-item">10</div>
-		<div class="flex-item">11</div>
+<body dir="ltr">
+	<div class="w-64 flex flex-wrap-reverse bg-yellow-600 text-blue-200">
+		<div class="w-24 m-2 bg-red-800 p-2">1</div>
+		<div class="w-24 m-2 bg-red-800 p-2">2</div>
+		<div class="w-24 m-2 bg-red-800 p-2">3</div>
+		<div class="w-24 m-2 bg-red-800 p-2">4</div>
+		<div class="w-24 m-2 bg-red-800 p-2">5</div>
+		<div class="w-24 m-2 bg-red-800 p-2">6</div>
+		<div class="w-24 m-2 bg-red-800 p-2">7</div>
+		<div class="w-24 m-2 bg-red-800 p-2">8</div>
+		<div class="w-24 m-2 bg-red-800 p-2">9</div>
+		<div class="w-24 m-2 bg-red-800 p-2">10</div>
+		<div class="w-24 m-2 bg-red-800 p-2">11</div>
 	</div>
 </body>
 </html>

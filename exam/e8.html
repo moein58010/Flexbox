@@ -3,38 +3,15 @@
    <head>
       <meta charset="utf-8">
       <title>flex-flow: flex-direction flex-wrap</title>
-      <style> 
-         body{
-         	direction: ltr;
-         }
-
-         .flex-container {
-	         width: 900px;
-	         display: flex;
-            flex-flow: column wrap-reverse;
-	         background-color: #34495E;
-	         color: #fff;
-         }
-
-         .flex-item {
-         	 width: 160px;
-	         margin: 5px;
-	         padding: 5px;
-	         line-height: 100px;
-	         font-size: 2em;
-	         background: tomato;
-	         color: white;
-	         text-align: center;
-         }
-      </style>
+      <link rel="stylesheet" type="text/css" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
    </head>
    <body>
-      <div class="flex-container">
-         <div class="flex-item">Flex Item 1</div>
-         <div class="flex-item">Flex Item 2</div>
-         <div class="flex-item">Flex Item 3</div>
-         <div class="flex-item">Flex Item 4</div>
-         <div class="flex-item">Flex Item 5</div>
+      <div class="w-1/2 flex flex-col flex-wrap-reverse bg-blue-400 text-red-300">
+         <div class="w-56 m-1 h-12 p-12 leading-4 text-2xl bg-red-500 text-yellow-300 text-center">Flex Item 1</div>
+         <div class="w-56 m-1 h-12 p-12 leading-4 text-2xl bg-red-500 text-yellow-300 text-center">Flex Item 2</div>
+         <div class="w-56 m-1 h-12 p-12 leading-4 text-2xl bg-red-500 text-yellow-300 text-center">Flex Item 3</div>
+         <div class="w-56 m-1 h-12 p-12 leading-4 text-2xl bg-red-500 text-yellow-300 text-center">Flex Item 4</div>
+         <div class="w-56 m-1 h-12 p-12 leading-4 text-2xl bg-red-500 text-yellow-300 text-center">Flex Item 5</div>
       </div>
    </body>
 </html>
